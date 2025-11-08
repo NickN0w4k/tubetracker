@@ -2,6 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](/LICENSE)
 
+[English version](README_EN.md)
+
 Self‑Hosted YouTube Video Archive & Analytics
 
 TubeTracker archiviert dauerhaft Video‑Metriken und Kommentare, erkennt gelöschte sowie wieder aufgetauchte (reinstated) Kommentare, bietet interaktive Vergleichs‑Charts und lässt sich flexibel per Cron oder Intervall konfigurieren – volle Datenhoheit ohne fremde Cloud.
