@@ -73,8 +73,8 @@ TubeTracker archiviert dauerhaft Video‑Metriken und Kommentare, erkennt gelös
    ```
 
 4. **Umgebungsvariablen konfigurieren:**
-   - Kopieren Sie `.env.sample` zu `.env`
-   - YouTube API Key & Optionen setzen
+   - Kopiere `.env.sample` zu `.env`
+   - Füge deinen YouTube API Key & Optionen ein
 
 5. **Backend starten:**
    ```bash
@@ -102,9 +102,9 @@ TubeTracker archiviert dauerhaft Video‑Metriken und Kommentare, erkennt gelös
 
 ### Video hinzufügen
 
-1. Öffnen Sie die Weboberfläche
-2. Geben Sie die YouTube-URL in das Eingabefeld ein (z.B. `https://www.youtube.com/watch?v=xvFZjo5PgG0`)
-3. Klicken Sie auf "Hinzufügen"
+1. Öffne die Weboberfläche
+2. Gib die YouTube-URL in das Eingabefeld ein (z.B. `https://www.youtube.com/watch?v=xvFZjo5PgG0`)
+3. Klicke auf "Hinzufügen"
 
 Die Anwendung wird automatisch:
 - Video-Informationen abrufen
@@ -113,19 +113,19 @@ Die Anwendung wird automatisch:
 
 ### Metriken anzeigen
 
-- Klicken Sie auf ein Video-Card, um Details anzuzeigen
-- Wechseln Sie zum Tab "📊 Metriken"
-- Sehen Sie die Entwicklung von Aufrufen, Likes und Kommentaren im Zeitverlauf
+- Klicke auf eine Video-Card, um Details anzuzeigen
+- Wechsle zum Tab "📊 Metriken"
+- Sieh dir die Entwicklung von Aufrufen, Likes und Kommentaren im Zeitverlauf an
 
 ### Kommentare durchsuchen
 
-- Öffnen Sie den Tab "💬 Kommentare"
-- Filtern Sie gelöschte Kommentare mit der Checkbox
-- Gelöschte Kommentare werden orange markiert mit Löschdatum
+ - Öffne den Tab "💬 Kommentare"
+ - Filtere gelöschte Kommentare mit der Checkbox
+ - Gelöschte Kommentare werden orange markiert mit Löschdatum
 
 ### Manuelle Synchronisierung
 
-Klicken Sie auf "🔄 Sync" bei einem Video, um sofort die neuesten Daten abzurufen.
+Klicke auf "🔄 Sync" bei einem Video, um sofort die neuesten Daten abzurufen.
 
 ## 🔧 Konfiguration & Env Variablen
 
@@ -194,7 +194,7 @@ DATABASE_URL=postgresql://user:password@localhost:5432/tubetracker
 
 ## 🎯 Testvideo
 
-Zum Testen können Sie dieses Video verwenden:
+Zum Testen kannst du dieses Video verwenden:
 ```
 https://www.youtube.com/watch?v=xvFZjo5PgG0
 ```
@@ -215,9 +215,9 @@ https://www.youtube.com/watch?v=xvFZjo5PgG0
 ## 🐛 Troubleshooting
 
 ### "Could not fetch video details"
-- Überprüfen Sie Ihren YouTube API Key
-- Stellen Sie sicher, dass die YouTube Data API v3 aktiviert ist
-- Prüfen Sie Ihr API-Quota
+- Überprüfe deinen YouTube API Key
+- Stelle sicher, dass die YouTube Data API v3 aktiviert ist
+- Prüfe dein API-Quota
 
 ### "Comments are disabled"
 - Das Video hat Kommentare deaktiviert
@@ -236,15 +236,15 @@ MIT License – siehe `LICENSE`
 
 ## 🤝 Beitragen
 
-Pull Requests sind willkommen! Für größere Änderungen öffnen Sie bitte zuerst ein Issue.
+Pull Requests sind willkommen! Für größere Änderungen öffne bitte zuerst ein Issue.
 
 ## 🔐 Datenschutz
 
-Alle Daten werden lokal auf Ihrem Server gespeichert. Es werden keine Daten an Dritte weitergegeben (außer den API-Aufrufen an YouTube zum Abrufen der Daten).
+Alle Daten werden lokal auf deinem Server gespeichert. Es werden keine Daten an Dritte weitergegeben (außer den API-Aufrufen an YouTube zum Abrufen der Daten).
 
 ## 📧 Support
 
-Bei Fragen oder Problemen öffnen Sie bitte ein Issue im GitHub Repository.
+Wenn du Fragen oder Probleme hast, öffne bitte ein Issue im GitHub-Repository.
 
 ---
 
