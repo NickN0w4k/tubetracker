@@ -1,5 +1,7 @@
 # TubeTracker 🎥
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](/LICENSE)
+
 Self‑Hosted YouTube Video Archive & Analytics
 
 TubeTracker archiviert dauerhaft Video‑Metriken und Kommentare, erkennt gelöschte sowie wieder aufgetauchte (reinstated) Kommentare, bietet interaktive Vergleichs‑Charts und lässt sich flexibel per Cron oder Intervall konfigurieren – volle Datenhoheit ohne fremde Cloud.
@@ -28,7 +30,7 @@ TubeTracker archiviert dauerhaft Video‑Metriken und Kommentare, erkennt gelös
 
 1. **Repository klonen:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/NickN0w4k/tubetracker.git
    cd TubeTracker
    ```
 
@@ -101,7 +103,7 @@ TubeTracker archiviert dauerhaft Video‑Metriken und Kommentare, erkennt gelös
 ### Video hinzufügen
 
 1. Öffnen Sie die Weboberfläche
-2. Geben Sie die YouTube-URL in das Eingabefeld ein (z.B. `https://www.youtube.com/watch?v=xU42foITnNQ`)
+2. Geben Sie die YouTube-URL in das Eingabefeld ein (z.B. `https://www.youtube.com/watch?v=xvFZjo5PgG0`)
 3. Klicken Sie auf "Hinzufügen"
 
 Die Anwendung wird automatisch:
@@ -194,7 +196,7 @@ DATABASE_URL=postgresql://user:password@localhost:5432/tubetracker
 
 Zum Testen können Sie dieses Video verwenden:
 ```
-https://www.youtube.com/watch?v=xU42foITnNQ
+https://www.youtube.com/watch?v=xvFZjo5PgG0
 ```
 
 ## 📝 Erweiterte Features / Roadmap
