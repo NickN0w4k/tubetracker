@@ -55,7 +55,7 @@ TubeTracker archiviert dauerhaft Video‑Metriken und Kommentare, erkennt gelös
 
 3. **Anwendung starten:**
    ```bash
-   docker-compose up -d
+   docker compose up -d
    ```
 
 4. **Öffnen:**
