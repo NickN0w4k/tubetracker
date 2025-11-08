@@ -35,9 +35,20 @@ cd tubetracker
 ```
 
 2. Create backend env and edit it:
-```bash
+
+Windows (PowerShell / CMD):
+```powershell
 copy backend/.env.sample backend/.env
 notepad backend/.env
+```
+
+Linux / macOS:
+```bash
+cp backend/.env.sample backend/.env
+# Edit with your preferred editor, e.g.:
+nano backend/.env
+# or
+${EDITOR:-nano} backend/.env
 ```
 Set `YOUTUBE_API_KEY` and optionally `SYNC_CRON` / `SYNC_INTERVAL_HOURS`, `SENTIMENT_ENABLED`, `SENTIMENT_MIN_CONFIDENCE`, `PORT` (default 5055).
 

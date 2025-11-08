@@ -37,9 +37,19 @@ TubeTracker archiviert dauerhaft Video‑Metriken und Kommentare, erkennt gelös
    ```
 
 2. **Backend‑Env erstellen und anpassen:**
-   ```bash
+   Windows (PowerShell / CMD):
+   ```powershell
    copy backend/.env.sample backend/.env
    notepad backend/.env
+   ```
+
+   Linux / macOS:
+   ```bash
+   cp backend/.env.sample backend/.env
+   # Edit with your preferred editor, e.g.:
+   nano backend/.env
+   # or
+   ${EDITOR:-nano} backend/.env
    ```
    Wichtig: `YOUTUBE_API_KEY` setzen. Optional: `SYNC_CRON`/`SYNC_INTERVAL_HOURS`, `SENTIMENT_ENABLED`, `SENTIMENT_MIN_CONFIDENCE`, `PORT` (Standard 5055).
 
