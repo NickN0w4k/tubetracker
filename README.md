@@ -33,7 +33,7 @@ TubeTracker archiviert dauerhaft Video‑Metriken und Kommentare, erkennt gelös
 1. **Repository klonen:**
    ```bash
    git clone https://github.com/NickN0w4k/tubetracker.git
-   cd TubeTracker
+   cd tubetracker
    ```
 
 2. **Backend‑Env erstellen und anpassen:**
