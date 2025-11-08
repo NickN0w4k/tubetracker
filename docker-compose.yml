@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5055:5055"
+    env_file:
+      - ./backend/.env
+    environment:
+      - YOUTUBE_API_KEY=${YOUTUBE_API_KEY}
+      - DATABASE_URL=postgresql://tubetracker:tubetracker@db:5432/tubetracker
+      - PORT=5055
+      - SYNC_CRON=${SYNC_CRON:-}
+      - SYNC_INTERVAL_HOURS=${SYNC_INTERVAL_HOURS:-24}
+    depends_on:
+      - db
+    volumes:
+      - ./backend:/app
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:5055/api
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    restart: unless-stopped
+
+  db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=tubetracker
+      - POSTGRES_USER=tubetracker
+      - POSTGRES_PASSWORD=tubetracker
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
