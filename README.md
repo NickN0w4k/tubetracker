@@ -261,3 +261,4 @@ Wenn du Fragen oder Probleme hast, öffne bitte ein Issue im GitHub-Repository.
 ---
 
 Made with ❤️ for transparency and data ownership
+
